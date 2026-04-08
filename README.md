@@ -17,3 +17,8 @@ Now that all of the rules have been created we have to add these NSG rules to th
 
 <img width="1020" height="265" alt="image" src="https://github.com/user-attachments/assets/bb141da0-512d-4e50-a5b6-40d9d45d7beb" />
 
+Now we will create the virtual machine to do this navigate to virtual machines -> create -> virtual machine. Select the resource group that you created and name the virtual machine. Since I want this lab to be free I will select no infastructure redundancy require(This means if the virtual machine goes down it will not restore itself). For this particular lab I selected the Windows 10 Enterprise, version 22H2 -x64 Gen2. The size will vary with what you will like to do with the lab. In this case I want to make it free and build a complex network, so I will select the standard_B2ats_v2(This is the cheapest option). Next create a usernmae and password. When in the disk tab you can leave everything as defalut, but I want this lab to cost no money so I will change it to a standard HDD. In the networking tab use the dmz subnet that was previously created and enable the public IP(This allows others to discover the vm). I have selected delete public IP when vm is delected and disable accelerated networking. Do not change anything in the management tab then next. In the monitoring tab diable boot diagnoistics. Then select review and create.
+
+<img width="1216" height="495" alt="image" src="https://github.com/user-attachments/assets/3fc302a4-2bf1-47b3-9c40-e34229433374" />
+
+
