@@ -13,4 +13,7 @@ The rule was added because if an attacker is able to infiltrate the honeypot vir
 
 <img width="1826" height="452" alt="image" src="https://github.com/user-attachments/assets/46f7326f-512e-4f02-bf0b-45b39e3723a8" />
 
-Now that all of the rules have been created we have to add these NSG rules to the Vnet. 
+Now that all of the rules have been created we have to add these NSG rules to the Vnet. Select the virtual network that you have created -> select the dmz subnet -> naviagte to the secuirty section -> select nsg-dmz -> save. Do the same configuration with the internal subnet. What this does is add the rules that we want to enforce to each subnet. 
+
+<img width="1020" height="265" alt="image" src="https://github.com/user-attachments/assets/bb141da0-512d-4e50-a5b6-40d9d45d7beb" />
+
