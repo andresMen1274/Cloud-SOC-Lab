@@ -1,2 +1,4 @@
 # Cloud-SOC-Lab
-In this project I will be creating a Cloud lab using Azure.
+Start by creating a free subscription with Azure. Then naviagte to resource groups -> create to create a new resource group and walk through the configuration. After the configuration is completed navigate to virtual network -> create. Walk through the first configuration steps and do not allow virtual network encryption, bastion, firewall, and DDOS protection. Then turn off enable private subnet, so the virtual machine will have internet access. Then create two new subnets and give them DMZ-subnet and Internal-subnet names(make sure to turn off enable private subnet as well as leave other settings as defalut). Next delete the defalut subnet and select review + create to create the virtual network. Search network security groups -> create to create a both nsg-dmz as well as nsg-internal. Make sure that all settings are left as defalut. Moreover, make sure that the same resource group and region are used for the creation of each NSG. 
+
+
