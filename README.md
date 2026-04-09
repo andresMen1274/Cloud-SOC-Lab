@@ -33,3 +33,4 @@ When it has finished installing it will say manage. Click manage and Windows Sec
 
 <img width="763" height="597" alt="image" src="https://github.com/user-attachments/assets/75e1a0ca-3adb-4a18-91be-6b10a46cac04" />
 
+Now logs will be forwarded to microsoft sentinal and the log analytics workspace. Wait for about 30 minutes and let the logs be collected. 
