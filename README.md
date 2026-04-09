@@ -21,4 +21,15 @@ Now we will create the virtual machine to do this navigate to virtual machines -
 
 <img width="1216" height="495" alt="image" src="https://github.com/user-attachments/assets/3fc302a4-2bf1-47b3-9c40-e34229433374" />
 
+Now that the virtual machine has been created go to connect -> RDP -> Download RDP. After this is done open the file and login with the credientals previously created. Now I will generate some fake traffic by copying the public IP address of the newly created virtual machine and using remote desktop control app on Windows to have false connections. The logs will be shown on Windows event viewer. When in event viewer naviagte to -> windows logs -> security. Then select create filter and enter the id 4625(Id for events in which a login attempt has failed).
+
+<img width="497" height="105" alt="image" src="https://github.com/user-attachments/assets/7cd82d13-f70f-44e8-ab7c-6af2ea6ba611" />
+
+Next we will setup a log analytics workspace. To do this navigate to log analytics workspace -> create and select the resource group that we created for the virtual machine. Then select review and create. After it has finished we will install a sentienal instance on the virtual machine. Go to Microsoft Sentinel -> create -> select the log analytics workspace that we created. Now we have linked the log analytics workspace to microsoft sentinal. While in the sentinal select the name of the log analytics workspace -> content management -> content hub -> install windows security events
+
+<img width="578" height="202" alt="image" src="https://github.com/user-attachments/assets/4c88a3d7-8366-4960-a2b1-cb9e0ef94380" />
+
+When it has finished installing it will say manage. Click manage and Windows Security Events via AMA -> create data collection rule. Name the rule and select the virtual machine and create.  
+
+<img width="763" height="597" alt="image" src="https://github.com/user-attachments/assets/75e1a0ca-3adb-4a18-91be-6b10a46cac04" />
 
